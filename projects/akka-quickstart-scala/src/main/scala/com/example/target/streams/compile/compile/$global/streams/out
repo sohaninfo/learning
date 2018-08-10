@@ -1,0 +1,83 @@
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/ActorHierarchyExperiments.scala:3:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.{ Actor, Props, ActorSystem }[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/ActorHierarchyExperiments.scala:6:36: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass PrintMyActorRefActor extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/ActorHierarchyExperiments.scala:7:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/ActorHierarchyExperiments.scala:9:23: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      val secondRef = context.actorOf(Props.empty, "second-actor")[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/ActorHierarchyExperiments.scala:9:39: not found: value Props[0m
+[0m[[0m[31merror[0m] [0m[0m      val secondRef = context.actorOf(Props.empty, "second-actor")[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/ActorHierarchyExperiments.scala:15:16: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system = ActorSystem("testSystem")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:4:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.{ Actor, ActorLogging, ActorRef, ActorSystem, Props }[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:19:64: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Greeter(message: String, printerActor: ActorRef) extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:19:46: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0mclass Greeter(message: String, printerActor: ActorRef) extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:10:55: not found: type Props[0m
+[0m[[0m[31merror[0m] [0m[0m  def props(message: String, printerActor: ActorRef): Props = Props(new Greeter(message, printerActor))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:10:44: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  def props(message: String, printerActor: ActorRef): Props = Props(new Greeter(message, printerActor))[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:10:63: not found: value Props[0m
+[0m[[0m[31merror[0m] [0m[0m  def props(message: String, printerActor: ActorRef): Props = Props(new Greeter(message, printerActor))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:25:17: missing parameter type for expanded function[0m
+[0m[[0m[31merror[0m] [0m[0mThe argument types of an anonymous function must be fully known. (SLS 8.5)[0m
+[0m[[0m[31merror[0m] [0m[0mExpected type was: ?[0m
+[0m[[0m[31merror[0m] [0m[0m  def receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:48:23: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Printer extends Actor with ActorLogging {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:48:34: not found: type ActorLogging[0m
+[0m[[0m[31merror[0m] [0m[0mclass Printer extends Actor with ActorLogging {[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:40:14: not found: type Props[0m
+[0m[[0m[31merror[0m] [0m[0m  def props: Props = Props[Printer][0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:40:22: not found: value Props[0m
+[0m[[0m[31merror[0m] [0m[0m  def props: Props = Props[Printer][0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:51:17: missing parameter type for expanded function[0m
+[0m[[0m[31merror[0m] [0m[0mThe argument types of an anonymous function must be fully known. (SLS 8.5)[0m
+[0m[[0m[31merror[0m] [0m[0mExpected type was: ?[0m
+[0m[[0m[31merror[0m] [0m[0m  def receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:53:7: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m      log.info("Greeting received (from " + sender() + "): " + greeting)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:53:45: not found: value sender[0m
+[0m[[0m[31merror[0m] [0m[0m      log.info("Greeting received (from " + sender() + "): " + greeting)[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:63:15: not found: type ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system: ActorSystem = ActorSystem("helloAkka")[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:63:29: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system: ActorSystem = ActorSystem("helloAkka")[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:67:16: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  val printer: ActorRef = system.actorOf(Printer.props, "printerActor")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:70:21: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  val howdyGreeter: ActorRef =[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:72:21: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  val helloGreeter: ActorRef =[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/root/examples/projects/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:74:23: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  val goodDayGreeter: ActorRef =[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m26 errors found[0m
